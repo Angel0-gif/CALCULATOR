@@ -1,0 +1,93 @@
+/* Root/body: center page content, set full viewport height, font, and page background image */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("IMG-20240912-WA0162.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Utility class: red background (used for highlighting or danger) */
+.clr {
+    background-color: #cb1f1f;
+}
+
+/* Utility class: white text color */
+.clt{
+    color: #ffffff;
+}
+
+/* Utility class: dark text color with larger font */
+.clv{
+    color: #0d0e0d;
+    font-size: large;
+}
+
+/* Variant class: light blue background (e.g., for affirmative buttons) */
+.yes {
+    background-color: rgb(138, 195, 228);
+}
+
+/* Calculator container: transparent base, padding, rounded corners, and shadow */
+.calculator {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(12, 12, 12);
+    text-align: center;
+    background-color: #050505;
+}
+
+/* Display/input area styles: full width, fixed height, right-aligned text, light background */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 0px;
+    margin-bottom: 10px;
+    background-color: #f6faf7;
+    color: #000000;
+}
+
+/* Buttons grid: 4 columns, gap between buttons, purple background for the grid area */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    background-color: #2601f5;
+    padding: 10px;
+}
+
+/* Scientific buttons grid: same layout as .buttons, separate section with top margin */
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    margin-top: 10px;
+    background-color: #2601f5;
+    padding: 10px;
+}
+
+/* Default button appearance: fixed size, font size, neutral background, rounded corners */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    background: #f7f6f6;
+    color: #050505;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button hover state: slightly brighter background for hover feedback */
+button:hover {
+    background: #fefefe;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="STYLING.css" />
+</head>
+<body>
+ <div>
+    <!-- Title and sub title -->
+    <div class="clv"><H1>ANGELO</H1></div> 
+    <div class="calculator">
+        <div class="clt">CALCULATOR</div>  
+        <br>
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <!-- Buttons -->
+            <button onclick="clearDisplay()" class="clr">C</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('/') " class="yes">/</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('*')" class="yes">*</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('-')" class="yes">-</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="deleteLast()">Del</button>
+            <button onclick="appendValue('+')" class="yes">+</button>
+            <button onclick="calculateResult()" class="yes">=</button>
+            <button onclick="toggleScientific()">Sc</button>
+        </div>
+        <div id="scientific" class="scientific-buttons"></div>
+    </div>
+    <script src="DESIGN.js"></script>
+</body>
+</html>
